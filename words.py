@@ -13,6 +13,7 @@ try:
 except ImportError:
     from urllib2 import urlopen
 
+
 def fetch_words(url):
     """Fetch a list of words from a URL.
     
@@ -31,6 +32,7 @@ def fetch_words(url):
             story_words.append(word)
     return story_words
 
+
 def print_items(items):
     """Print items one per line.
     
@@ -39,6 +41,7 @@ def print_items(items):
     """
     for item in items:
         print(item)
+
 
 def main(url):
     """Print each word from a text document from a URL.
